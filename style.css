@@ -1,0 +1,102 @@
+body,
+ul,
+li,
+h1,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+input {
+  border: none;
+  background-color: initial;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  width: 250px;
+  font-size: 25px;
+  margin-top: 20px;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+input:focus {
+  outline: none;
+}
+button {
+  background-color: initial;
+  border: none;
+  color: #fff;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.js-clock h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+.js-weather {
+  font-size: 20px;
+  font-weight: bold;
+}
+.js-greetings-wrap {
+  margin: 39px 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.js-greetings {
+  font-size: 25px;
+}
+
+.js-toDoList {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.js-toDoList li {
+  padding: 10px 0;
+  padding-left: 10px;
+}
+.formH,
+.greetingsH {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+.flexing {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}
